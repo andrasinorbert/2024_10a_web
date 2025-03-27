@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            transform: rotate(60deg);
+            margin: 20em;
+        }
+        hr{
+            color: green;
+            transform: rotate(120deg);
+        }
+        li[name|="szeretem"]{
+            color:red;
+            font-weight: bold;
+        }
+        li:hover{
+            font-size: 3em;
+        }
+        li:first-child{
+            color:green;
+        }
+        p::selection{
+            color:pink;
+            background-color: aquamarine;
+        }
+        ul:after{
+            content: "Szia";
+            color:brown;
+        }
+        li:before{
+            content: "<b>";
+        }
+        li:after{
+            content: "</b>";
+        }
+        span[class$="p"]:before{
+            content: "<p>"
+        }
+        
+        span[class$="p"]:after{
+            content: "</p>"
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>adat1</li>
+        <li name="szeretem-a-cicákat">adat2</li>
+        <li>adat3</li>
+    </ul>
+
+    <span class="tag-p">faleflhflhlahflhael</span>
+
+    <hr>
+    <div style="background-color: purple;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nobis fugit sit delectus veniam velit soluta modi deleniti reprehenderit ipsa quis aliquam doloremque ex, atque enim magni? Accusamus, neque voluptates?</p>
+    </div>
+    <hr>
+</body>
+</html>
