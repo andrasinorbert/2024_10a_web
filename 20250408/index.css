@@ -1,0 +1,7 @@
+div#alma p{
+    color:red;
+}
+
+p{
+    color:blue !important;
+}
